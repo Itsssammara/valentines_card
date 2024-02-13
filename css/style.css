@@ -4,26 +4,23 @@ body {
   width: 100%;
   height: 100%;
 }
-
 body {
   display: flex;
   margin: auto;
-  background-image: url(https://assets.codepen.io/4927073/Group2.png), url(https://assets.codepen.io/4927073/Background6.png);
-  background-image: url(https://assets.codepen.io/4927073/Group2.png), linear-gradient(33deg, #edf2f7, #edf2f7);
-  background-image: url(https://assets.codepen.io/4927073/Group2.png),  linear-gradient(33deg, #2c303a, #2c303a);
+  /* background-image: url(https://i.postimg.cc/PrMBdzgz/valentines.png), url(https://i.postimg.cc/PrMBdzgz/valentines.png); */
+   background-image: url(https://assets.codepen.io/4927073/Group2.png), linear-gradient(33deg, #FDE3EA, #FDE3EA);
+  background-image: url(https://assets.codepen.io/4927073/Group2.png),  linear-gradient(33deg, #F5406D, #F5406D);
   background-size: cover;
   background-position: 50% 50%;
 }
-
 .envelope {
   content: url(https://assets.codepen.io/4927073/Envelope3.png);
   width: 430px;
   position: absolute;
   left: 18%;
   top: 3%;
-  filter: drop-shadow(1.5px 0.75px 1.75px #4d4d4d);
+  filter: drop-shadow(1.5px 0.75px 1.75px #4D4D4D);
 }
-
 .card {
   position: relative;
   width: 262px;
@@ -31,20 +28,19 @@ body {
   margin: auto;
   box-shadow: inset 5px 0px 15px 0px rgba(0, 0, 0, 0.1),
     3px 0px 3px -2px rgba(0, 0, 0, 0.3);
-  background-color: #fffffa;
+  background-color: #FFFFFA;
       transform: scale(1.05);
   left: 12px;
 }
-
 .front {
   position: absolute;
   width: 100%;
   height: 100%;
   margin: -10px 0px 0px -10px;
   margin: auto;
-  border: 1px solid #e0e0db;
+  border: 1px solid #E0E0DB;
   backface-visibility: hidden;
-  background-color: #e8e6e3;
+  background-color: #E8E6E3;
   background-size: contain;
   transform-style: preserve-3d;
   transform-origin: 0% 50%;
@@ -52,19 +48,16 @@ body {
   transition: all 1s ease-in-out;
   filter: saturate(1.125) brightness(1.0125);
 }
-
 .card:hover .front {
   transform: perspective(800px) rotateY(-170deg);
   background-color: rgb(205, 205, 205);
 }
-
 .card:hover .back {
   transform: perspective(800px) rotateY(-170deg);
   box-shadow: 7px 0px 2px 0px rgba(0, 0, 0, 0.3),
     inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
-  background-color: #fffffa;
+  background-color: #FFFFFA;
 }
-
 .back {
   position: absolute;
   width: 100%;
@@ -91,7 +84,6 @@ body {
   font-family: Roboto;
   color: #929292;
 }
-
 .f-box {
   width: 100%;
   height: 100%;
@@ -100,21 +92,15 @@ body {
   box-shadow: 0 2px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-
 .f-box img {
   margin-top: 0px;
   height: 100%;
   width: auto;
 }
-
-
-
-
 @media (max-width: 675px) {
   .envelope {
     width: 380px;
 }
-  
   .card {
     height: 330px;
     width: 230px;
